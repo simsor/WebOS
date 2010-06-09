@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> WebOS </title>
+<link rel="stylesheet" name="Design WebOS" media="screen" type="text/css" href="css/webos.css" />
+<link rel="stylesheet" name="jGrowl" media="screen" type="text/css" href="css/jquery.jgrowl.css" />
+<link rel="stylesheet" name="Windows Engine" media="screen" type="text/css" href="css/jquery.windows-engine.css" />
+<link rel="stylesheet" name="Icon Engine" media="screen" type="text/css" href="css/icon.css" />
+<link rel="stylesheet" name="Context Menu" media="screen" type="text/css" href="css/vscontext.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.tools.js"></script>
+<script src="js/jquery.jgrowl.js"></script>
+<script src="js/jquery.windows-engine.js"></script>
+<script src="js/icon.js"></script>
+<script src="js/vscontext.jquery.js"></script>
+</head>
+
+<body>
+<script>
+	$(function(){
+		$("#icon1").newWindow({
+			windowTitle: "Test",
+			ajaxURL: "apps/mediaPlayer.html"
+		})
+		.icon();
+		
+		$("#desktop").vscontext({menuBlock: "vs-context-menu"});
+	});
+</script>
+
+<div id="desktop">
+	<div id="icon1"><img src="images/test.png" /><br />Lecteur multim&eacute;dia</div>
+</div>
+
+<div id="taskbar">
+</div>
+
+<div class="vs-context-menu">
+<ul>
+<li><a href="javascript:alert('hi');">Test</a></li>
+</ul>
+</div>
+
+</body>
+</html>

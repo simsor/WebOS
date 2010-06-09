@@ -1,0 +1,24 @@
+body {
+}
+
+#desktop {
+	position: fixed;
+	top:0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/webosbg.jpg);
+}
+
+#taskbar {
+	position:fixed;
+	bottom:0;
+	background-color: #FFFFFF;
+}
+
+.task {
+	background-image: url(../images/taskbar.png);
+	padding: 4px 4px;
+	cursor: default;
+}

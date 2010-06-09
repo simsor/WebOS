@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			WebOS
+		</title>
+		
+		<link rel="stylesheet" name="Design Login" media="screen" type="text/css" href="css/designLogin.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.tools.js"></script>
+	</head>
+	<body>
+		<script>
+			$(function(){
+				$("#myform").validator()
+				.bind("click keydown",function(){$(this).expose(); });
+				
+				$("#ok").focus(function(){
+					document.location.replace("webos.html");
+				});
+			});
+		</script>
+		
+		<form id="myform">
+			<fieldset>
+			<h3>Connexion</h3>
+			
+			<p>Remplissez les champs et cliquez sur Ok</p>
+			
+			<p>
+				<label>Nom d'utilisateur:</label>
+				<input type="text" name="pseudo" required="required" />
+			</p>
+			
+			<p>
+				<label>Mot de passe:</label>
+				<input type="password" name="pass" required="required" />
+			</p>
+			
+			<button id="ok">Ok</button>
+			</fieldset>
+		</form>
+	</body>
+</html>

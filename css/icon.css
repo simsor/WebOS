@@ -1,0 +1,18 @@
+.icon {
+	position: absolute;
+	left:350;
+	top:200;
+	cursor: default;
+}
+
+.icon:hover {
+	/* Shadow if it is a modern browser */
+	
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+}
+
+.icon-selected {
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+}
