@@ -1,0 +1,9 @@
+WebOS is a web-based operating system.
+Its aim is to provide a desktop accessible from everywhere.
+
+It's fully written with JavaScript and HTML5, no Flash or tricky things like that, so you can use it on your iPhone (I think, if it doesn't work, please e-mail me).
+It has an intuitive interface and it is designed to be beautiful and useful (who wants just a "design" and no content ?).
+
+For the moment, this project isn't well advanced, it manages the windows (opening, resizing, minimizing and closing) and I am working on the SDK, which will help the developper to develop apps for WebOS.
+
+And...I don't really like this name, WebOS. If you have an idea of a new one, could you send it to me :) ?
